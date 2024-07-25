@@ -13,7 +13,7 @@ public class Todo {
     private int userId;
     private int id;
     private String title;
-    private boolean completed;
+    private Boolean completed;
 
     public Todo (int id,boolean completed,String title,int userId){
         this.id=id;
@@ -47,6 +47,10 @@ public class Todo {
     }
 
     public boolean isCompleted() {
+        return completed;
+    }
+
+    public Boolean getCompleted() {  // Change method name to getCompleted()
         return completed;
     }
 
