@@ -18,7 +18,7 @@ public class ToDoController {
         TodoList.add(new Todo(2,false,"Todo",2));
         TodoList.add(new Todo(3,false,"Todo",3));
     }
-
+    @TimeMonitor
     @GetMapping
     public ResponseEntity<List<Todo>> getTodos(){
         return ResponseEntity.status(HttpStatus.OK).body(TodoList);
